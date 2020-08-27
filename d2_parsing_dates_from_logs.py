@@ -18,7 +18,7 @@ with open(logfile) as f:
 
 
 def convert_to_datetime(line):
-    """T
+    """
        Extract timestamp from logline and convert it to a datetime object.
        For example calling the function with:
        INFO 2014-07-03T23:27:51 supybot Shutdown complete.
