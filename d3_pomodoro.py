@@ -11,7 +11,7 @@ def countdown(minutes, beep):
     seconds = minutes * 60
     while seconds:
         mins, secs = divmod(seconds, 60)
-        counter = "{:02d}:{:02d}".format(mins, secs)
+        counter = f"{mins:02d}:{secs:02d}"
         print(counter, end="\r")
         time.sleep(1)
         seconds -= 1
