@@ -1,5 +1,4 @@
 from datetime import datetime
-from datetime import timedelta
 import os
 import re
 import urllib.request
@@ -43,4 +42,5 @@ def time_between_shutdowns(loglines):
     return shutdown_events[1] - shutdown_events[0]
 
 
-print(time_between_shutdowns(loglines))
+if __name__ == "__main__":
+    print(time_between_shutdowns(loglines))
